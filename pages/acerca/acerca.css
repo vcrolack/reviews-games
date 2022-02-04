@@ -1,0 +1,69 @@
+.banner {
+  position: relative;
+  height: 50vh;
+  min-width: 380px;
+  background-image: url('../../assets/img/banner1.jpg');
+  background-size: cover;
+  background-size: center;
+}
+.banner span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.banner .container-description {
+  width: 100%;
+  height: 100%;
+  width: 500px;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+.banner .container-description h2 {
+  text-align: center;
+}
+
+#section-about-site {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.logo  {
+  min-width: 380;
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: center;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.about-site {
+  width: 50%;
+}
+
+#section-cards-members {
+  width: 75%;
+}
+.card {
+  width: 100%;
+  border: 1px solid black;
+}
+.container-img-member {
+  width: 450px;
+  height: 450px;
+}
+.container-img-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-member {
+  width: 50%;
+}
