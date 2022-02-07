@@ -26,11 +26,36 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header header"
+  "banner banner banner banner banner"
+  "card card card card card"
+  "footer footer footer footer footer";
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#main {
+  grid-area: banner;
+
+}
+
 .banner {
   position: relative;
-  height: 50vh;
-  min-width: 380px;
-  background-image: url('./assets/img/banner1.jpg');
+  height: 60vh;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-size: center;
 }
@@ -43,55 +68,71 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.banner .container-description {
+.container-description {
   width: 100%;
   height: 100%;
-  width: 500px;
   z-index: 2;
   position: relative;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
 }
-.banner .container-description h2 {
-  text-align: center;
+.title-description-banner {
+  width: 500px;
+  margin-bottom: 10px;
 }
-#section-recent-reviews {
-  margin-top: 10px;
+.p-description-banner {
+  width: 500px;
+  height: 100px;
+  font-size: 1.2rem;
 }
+
 .title-section {
   text-align: center;
 }
+
+#section-recent-reviews {
+  width: 100%;
+  margin-top: 10px;
+  grid-area: card;
+  justify-self: center;
+  
+}
+
+.container-reviews {
+  padding: 0 120px 0 120px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.title-section {
+  margin-top: 50px;
+}
+
 .card {
-  display: inline-block;
-  width: 300px;
+  width: 50%;
+  padding-bottom: 20px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 10px 15px 5px #787878;
-  margin: 20px
+  margin: 50px;
 }
 
 .card .card-header {
-  position:relative;
-  height: 10vh;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
+  height: 600px;
+  width: 100%;
 }
-
-.card .card-header-img1 {
-  background-image: url('./assets/img/farcry.jpg');
+.card-header-img {
+  width: 300px;
+  height: 300px;
+}
+.card-header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
-
-.card .card-header-img2 {
-  background-image: url('./assets/img/cyberpunk2077.jpg');
-  border-radius: 5px;
-}
-
-.card .card-header-img3 {
-  background-image: url('./assets/img/Valhalla.jpg');
-  border-radius: 5px;
-}
-
 .card .card-body {
   text-align: center;
   height: 10vh;
@@ -111,6 +152,42 @@ body{
   font-size: 1.5rem;
   font-weight: 900;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  .container-reviews{
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+@media  screen and (max-width: 830px) {
+  
+  .container-reviews {
+    flex-direction: column;
+  }
+  .banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: center;
+    height: 50vh;
+  }
+  .banner img {
+    object-fit: cover;
+  }
+
+  
+  .container-description, .p-description-banner p, .title-description-banner h2 {
+    display: none;
+
+  }
+  .card {
+    width: 90%;
+  }
 }
 
 
