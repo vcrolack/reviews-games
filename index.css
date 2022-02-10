@@ -141,10 +141,14 @@ body{
 .card .card-body h3 {
   margin-top: 10px;
 }
+.card-body a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .btn-watch-now {
   width: 70%;
-  height: 40%;
+  height: 50%;
   margin-top: 20px;
   border: none;
   background-color: #181818;
