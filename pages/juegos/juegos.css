@@ -37,6 +37,9 @@
 
 #section-games {
   margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
   display: inline-block;
