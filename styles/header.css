@@ -1,28 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-#header {
-  grid-area: header;
 
-}
 #header .top-menu {
-  height: 100px;
+  min-height: 100px;
 }
-.navbar {
-  width: 100%;
-  background-color: #f9f9f9;
-}
-.site-style {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.site-style h1 {
-  width: 100%;
-  margin-left: 10px;
-}
-.menu {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .container-logo {
   width: 100px;
@@ -36,27 +17,9 @@
   height: 100%;
   margin-right: 50px;
 }
-.menu ul li{
-  display: inline-block;
-}
 
 .menu ul li a {
-  text-decoration: none;
-  color: #000;
   font-size: 20px;
   margin-left: 50px;
 }
-@media screen and (max-width: 718px) {
-  .site-style {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 450px) {
-  .container-logo {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .site-style h1 {
-    display: none;
-  }
-}
+

@@ -20,23 +20,6 @@ body{
 	font-weight: 400;
   background-color: #D2D2D1;
 }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "header header header header header"
-  "banner banner banner banner banner"
-  "card card card card card"
-  "footer footer footer footer footer";
-
-}
 
 * {
   margin: 0;
@@ -44,22 +27,32 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-#main {
-  grid-area: banner;
-
+/* ESTILOS HEADER */
+#header .top-menu {
+  min-height: 100px;
 }
 
-.banner {
-  position: relative;
-  height: 60vh;
+
+.container-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 20px ;
+  display: flex;
 }
-.banner img {
+
+.container-logo img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-size: center;
+  margin-right: 50px;
 }
-.banner span {
+
+.menu ul li a {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* ESTILOS BANNER */
+.overlay span {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,6 +82,12 @@ body{
   font-size: 1.2rem;
 }
 
+.container-description-mobile {
+  background-color: #FED8FF;
+  display: none;
+}
+
+/* ESTILOS SECCION DE RESEÑAS RECIENTES */
 .title-section {
   text-align: center;
 }
@@ -96,7 +95,6 @@ body{
 #section-recent-reviews {
   width: 100%;
   margin-top: 10px;
-  grid-area: card;
   justify-self: center;
   
 }
@@ -110,40 +108,10 @@ body{
   margin-top: 50px;
 }
 
-.card {
-  width: 50%;
-  padding-bottom: 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0px 10px 15px 5px #787878;
-  margin: 50px;
-}
-
-.card .card-header {
-  height: 600px;
+.card img {
   width: 100%;
-}
-.card-header-img {
-  width: 300px;
   height: 300px;
-}
-.card-header-img img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-}
-.card .card-body {
-  text-align: center;
-  height: 10vh;
-  min-width: 200px;
-}
-.card .card-body h3 {
-  margin-top: 10px;
-}
-.card-body a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .btn-watch-now {
@@ -158,40 +126,68 @@ body{
   border-radius: 5px;
 }
 
-@media screen and (max-width: 990px) {
-  .container-reviews{
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  .card {
-    width: 90%;
-  }
+/* ESTILOS FOOTER */
+#footer {
+  margin-top: 30px;
+  background-color: #f9f9f9;
 }
 
-@media  screen and (max-width: 830px) {
-  
-  .container-reviews {
-    flex-direction: column;
-  }
-  .banner {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: center;
-    height: 50vh;
-  }
-  .banner img {
-    object-fit: cover;
-  }
+.container-logo-footer {
+  width: 400px;
+  height: 300px;
+}
+.container-logo-footer .logo {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat:  no-repeat;
+  object-fit: contain;
+}
+.container-social-networks {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
 
-  
+.container-social-networks .container-sn {
+  width: 70px;
+  height: 70px;
+}
+.title-sn h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.instagram {
+  background-image: url('../assets/icons/instagram.svg');
+  width: 100%;
+  height: 100%;
+}
+.youtube {
+  background-image: url('../assets/icons/youtube.svg');
+  width: 100%;
+  height: 100%;
+}
+.twitter {
+  background-image: url('../assets/icons/twitter.svg');
+  width: 100%;
+  height: 100%;
+  justify-self: end;
+}
+
+
+
+@media  screen and (max-width: 830px) {
+
   .container-description, .p-description-banner p, .title-description-banner h2 {
     display: none;
+  }
+  .container-description-mobile {
+    background-color: #FED8FF;
+    display: block;
+  }
 
-  }
-  .card {
-    width: 90%;
-  }
 }
 
 

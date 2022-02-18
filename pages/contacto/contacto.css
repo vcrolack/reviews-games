@@ -3,95 +3,67 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-#banner {
-  grid-area: banner;
+
+/* ESTILOS HEADER */
+#header .top-menu {
+  min-height: 100px;
 }
 
-.banner {
-  position: relative;
-  height: 60vh;
-  min-width: 380px;
-  background-size: cover;
-  background-size: center;
+
+.container-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 20px ;
+  display: flex;
 }
-.banner img {
+
+.container-logo img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-size: center;
+  margin-right: 50px;
 }
-.banner span {
+
+.menu ul li a {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* ESTILOS BANNER */
+.overlay span {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
 }
-.banner span h2 {
+.container-description {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
   color: #fff;
-  font-size: 5rem;
-  text-align: center;
-} 
-
-#section-contacto {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
 }
+.title-description-banner h2 {
+  font-size: 2.5rem;
+}
+
+/* ESTILOS FORMULARIO */
 .container-form {
-  height: 350px;
-  min-width: 590px;
+  height: 450px;
   border-radius: 10px;
   background-color: #FED8FF;
-  margin: 20px;
-  grid-area:5 / 5 / 9 / 9;
-}
-.container-description  {
-  margin-bottom: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container-description-title {
-  margin: 15px 15px;
 }
 .box {
-  height: 30%;
+  height: 20%;
 }
-.box-form {
-  display: flex;
-  justify-content: space-evenly;
-}
-.box-form-inputs {
-  display: flex;
-  flex-direction: column;
-}
+
 .box-name input, .box-email input {
   border: none;
   height: 30px;
   padding-left: 10px;
   outline: none;
-}
-
-.box-btn {
-  display: flex;
-  justify-content: center;
-}
-.box-btn button {
-  width: 55%;
-  border: none;
-  background-color: #000;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.3rem;
-}
-.box-btn-mobile {
-  display: none;
 }
 .box-textarea textarea {
   border: none;
@@ -99,52 +71,64 @@
   padding-top: 10px;
   resize: none;
 }
-@media screen and (max-width: 600px) {
-  .banner {
-    min-width: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: center;
-    height: 50vh;
-    margin-bottom: 10px;
-  }
-  .banner img {
-    object-fit: cover;
-    
-  }
-  .banner span h2 {
-    font-size: 3rem;
-  }
-  .container-form {
-    margin: 0;
-    height: 450px;
-    min-width: 300px;
-  }
-  .box-form {
-    flex-direction: column;
-    align-items: center;
-  }
-  .box-name {
-    margin-bottom: 15px;
-  }
-  .box-textarea{
-    margin-top: 15px;
-    }
-  .box-btn button {
-    display: none;
-  }
-  .box-btn-mobile {
-    display: block;
-  }
-  .box-btn-mobile button {
-    width: 100px;
-    height: 50px;
-    margin-top: 15px;
-    border: none;
-    background-color: #000;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-  }
+.box-btn button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+}
 
+
+
+/* ESTILOS FOOTER */
+#footer {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+}
+
+.container-logo-footer {
+  width: 400px;
+  height: 300px;
+}
+.container-logo-footer .logo {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat:  no-repeat;
+  object-fit: contain;
+}
+.container-social-networks {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.container-social-networks .container-sn {
+  width: 70px;
+  height: 70px;
+}
+.title-sn h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.instagram {
+  background-image: url('../../assets/icons/instagram.svg');
+  width: 100%;
+  height: 100%;
+}
+.youtube {
+  background-image: url('../../assets/icons/youtube.svg');
+  width: 100%;
+  height: 100%;
+}
+.twitter {
+  background-image: url('../../assets/icons/twitter.svg');
+  width: 100%;
+  height: 100%;
+  justify-self: end;
 }

@@ -4,84 +4,104 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#banner {
-  grid-area: banner;
+/* ESTILOS HEADER */
+#header .top-menu {
+  min-height: 100px;
 }
 
-.banner {
-  position: relative;
-  height: 60vh;
-  min-width: 380px;
+
+.container-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 20px ;
+  display: flex;
 }
-.banner img {
+
+.container-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-
+  margin-right: 50px;
 }
-.banner span {
+
+.menu ul li a {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* ESTILOS BANNER */
+.overlay span {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
 }
-.banner span h2 {
+.container-description {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
   color: #fff;
-  font-size: 5rem;
-  text-align: center;
-} 
-
-
-#section-game-detail {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+}
+.title-description-banner h2 {
+  font-size: 2.5rem;
 }
 
+/* ESTILOS RESEÑA */
 #section-game-detail p {
   margin-bottom: 15px;
   margin: 20px 20px;
   font-size: 1.1rem;
   
 }
-.review {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: 4/ 4 / 10 / 10;
+
+/* ESTILOS FOOTER */
+#footer {
+  margin-top: 30px;
+  background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 1340px) {
-  .review {
-    grid-area: 3/ 3 / 11 / 11;
-  }
+.container-logo-footer {
+  width: 400px;
+  height: 300px;
 }
-@media screen and (max-width: 880px) {
-  .banner {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: center;
-    height: 50vh;
-  }
-  .banner img {
-    object-fit: cover;
-    
-  }
-  .review {
-    grid-area: 2/ 2 / 12 / 12;
-  }
+.container-logo-footer .logo {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat:  no-repeat;
+  object-fit: contain;
 }
-@media  screen and (max-width: 400px) {
-  .banner {
-    min-width: 0;
-  }
-  .banner span h2 {
-    font-size: 3rem;
-  }
+.container-social-networks {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.container-social-networks .container-sn {
+  width: 70px;
+  height: 70px;
+}
+.title-sn h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.instagram {
+  background-image: url('../assets/icons/instagram.svg');
+  width: 100%;
+  height: 100%;
+}
+.youtube {
+  background-image: url('../assets/icons/youtube.svg');
+  width: 100%;
+  height: 100%;
+}
+.twitter {
+  background-image: url('../assets/icons/twitter.svg');
+  width: 100%;
+  height: 100%;
 }

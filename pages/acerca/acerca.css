@@ -5,84 +5,47 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#banner {
-  grid-area: banner;
+/* ESTILOS HEADER */
+#header .top-menu {
+  min-height: 100px;
+}
+.container-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 20px ;
+  display: flex;
 }
 
-.banner {
-  position: relative;
-  height: 60vh;
-  min-width: 380px;
-  background-size: cover;
-  background-size: center;
-}
-.banner img {
+.container-logo img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-size: center;
+  margin-right: 50px;
 }
-.banner span {
+
+.menu ul li a {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* ESTILOS BANNER */
+.overlay span {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
 }
-.banner span h2 {
-  color: #fff;
-  font-size: 5rem;
-  text-align: center;
-} 
-
-
-
-#section-about-site {
-  width: 100%;
-  margin-bottom: 100px;
-  display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
-.logo-about  {
-  min-width: 380;
-  height: 600px;
-  width: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: center;
-  justify-self: end;
-}
-.logo-about img {
+.container-description {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  
+  z-index: 2;
+  position: relative;
+  color: #fff;
 }
-.about-site {
-  width: 50%;
-  justify-self: start;
-  align-self: center;
-}
-.about-site-p {
-  width: 500px;
-}
-
-#section-cards-members {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "space member1 member1"
-  "space member2 member2";
-  justify-content: center;
-  gap: 50px;
+.title-description-banner h2 {
+  font-size: 2.5rem;
 }
 
 .title-members {
@@ -91,135 +54,78 @@
   margin-bottom: 30px;
 }
 
+/*ESTILOS MIEMBROS*/
 .card {
   width: 100%;
-  min-width: 955px;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #FED8FF;
 }
-.container-img-member {
-  margin-right: 30px;
-}
-.container-img-member img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+.card img {
+  width: 50%;
   object-fit: cover;
 }
-.about-member {
+
+/* ESTILOS FOOTER */
+#footer {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+}
+
+.container-logo-footer {
+  width: 400px;
+  height: 300px;
+}
+.container-logo-footer .logo {
   width: 100%;
-  display: flex;
+  height: 100%;
+  background-position: center;
+  background-repeat:  no-repeat;
+  object-fit: contain;
+}
+.container-social-networks {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
 }
 
-.about-member h3 {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.container-social-networks .container-sn {
+  width: 70px;
+  height: 70px;
 }
-.member1 {
-  grid-area: member1;
+.title-sn h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
-.member2 {
-  grid-area: member2;
+.instagram {
+  background-image: url('../../assets/icons/instagram.svg');
+  width: 100%;
+  height: 100%;
 }
-@media screen and (max-width: 1140px) {
-  #section-about-site {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas:
-    "logo-about-site"
-    "text-about-site";
-    gap: 0;
-  }
-  .logo-about  {
-    grid-area: logo-about-site;
-    justify-self: center;
-    align-self: end;
-  }
-  .about-site {
-    grid-area: text-about-site;
-    justify-self: center;
-    align-self: start;
-  }
-  .about-site-p {
-    width: 100%;
-  }
-
-  #section-cards-members {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:auto;
-    grid-template-areas: 
-    "empty member1"
-    "empty member2";
-    
-  }
-  .card {
-    min-width: 700px;
-  }
-  .member1 {
-    grid-area: member1;
-  }
-  .member2 {
-    grid-area: member2;
-  }
-  .container-img-member {
-    width: 100%;
-    height: 450px;
-    margin: 0;
-  }
-  .about-member {
-    width: 100%;
-    margin-right: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-member-p {
-    width: 100px;
-  }
+.youtube {
+  background-image: url('../../assets/icons/youtube.svg');
+  width: 100%;
+  height: 100%;
+}
+.twitter {
+  background-image: url('../../assets/icons/twitter.svg');
+  width: 100%;
+  height: 100%;
+  justify-self: end;
 }
 
-@media screen and (max-width: 818px) {
-  .banner {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: center;
-    height: 50vh;
+@media screen and (max-width: 990px) {
+  .card img {
+    width: 100%;
   }
-  .banner img {
-    object-fit: cover;
-    
-  }
-  .card {
-    min-width: 300px;
-  }
+}
+@media screen and (max-width: 380px ) {
   .logo-about {
-    min-width: 200px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
-  #section-about-site {
-    gap: 0;
-    justify-content: center;
-  }
-  .about-site {
-    width: 70%;
-  }
-  .about-site-p {
+  .logo-about img {
     width: 100%;
+    height: 100%;
   }
 }
-@media  screen and (max-width: 400px) {
-  #section-about-site {
-    height: 1200px;
-  }
-  .banner {
-    min-width: 0;
-  }
-  .card {
-    width: 80%;
-    height: auto;
-    padding: 10px;
-  }
-}
+
