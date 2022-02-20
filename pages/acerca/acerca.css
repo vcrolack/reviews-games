@@ -26,6 +26,10 @@
   font-size: 20px;
   margin-left: 50px;
 }
+.menu ul li a:hover {
+  background-color: #FF63C2;
+  border-radius: 5px;
+}
 
 /* ESTILOS BANNER */
 .overlay span {
