@@ -129,6 +129,9 @@ body{
   font-weight: 900;
   border-radius: 5px;
 }
+.btn-watch-now:hover {
+  background-color: #FF63C2;
+}
 
 /* ESTILOS FOOTER */
 #footer {
