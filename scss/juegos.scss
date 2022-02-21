@@ -1,0 +1,75 @@
+@import "variables";
+@import "fonts";
+@import "header";
+@import "banner";
+
+#section-games {
+  margin: 50px;
+}
+
+.card {
+  width: 15rem;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn-watch-now {
+    width: 70%;
+    height: 40%;
+    margin-top: 20px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 5px;
+    &:hover {
+      background-color: #FF63C2;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@import "footer";
+

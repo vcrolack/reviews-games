@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+#header .top-menu {
+  min-height: 100px; }
+
+.container-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 20px;
+  display: flex; }
+  .container-logo img {
+    width: 100%;
+    height: 100%;
+    margin-right: 50px; }
+
+.menu ul li a {
+  font-size: 20px;
+  margin-left: 50px; }
+  .menu ul li a:hover {
+    background-color: #FF63C2;
+    border-radius: 5px; }
+
+.overlay span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1; }
+  .overlay span .container-description {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center; }
+    .overlay span .container-description .title-description-banner {
+      width: 500px;
+      margin-bottom: 10px; }
+    .overlay span .container-description .title-description-banner h2 {
+      font-size: 2.5rem; }
+    .overlay span .container-description .p-description-banner {
+      width: 500px;
+      height: 100px;
+      font-size: 1.2rem; }
+
+#section-games {
+  margin: 50px; }
+
+.card {
+  width: 15rem;
+  height: 300px; }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card .btn-watch-now {
+    width: 70%;
+    height: 40%;
+    margin-top: 20px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 5px; }
+    .card .btn-watch-now:hover {
+      background-color: #FF63C2; }
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both; }
+
+.animatedFadeInUp {
+  opacity: 0; }
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp; }
+
+#footer {
+  margin-top: 30px;
+  background-color: #F9F9F9; }
+
+.container-logo-footer {
+  width: 400px;
+  height: 300px; }
+  .container-logo-footer .logo {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain; }
+
+.container-social-networks {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px; }
+  .container-social-networks .title-sn h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    padding-left: 10px; }
+  .container-social-networks .container-sn {
+    width: 70px;
+    height: 70px; }
+
+.instagram {
+  background-image: url("../assets/icons/instagram.svg");
+  width: 100%;
+  height: 100%; }
+
+.youtube {
+  background-image: url("../assets/icons/youtube.svg");
+  width: 100%;
+  height: 100%; }
+
+.twitter {
+  background-image: url("../assets/icons/twitter.svg");
+  width: 100%;
+  height: 100%; }
