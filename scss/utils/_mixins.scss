@@ -1,0 +1,16 @@
+@mixin create-button ($background-color, $name, $width, $height, $font-size) {
+  .btn-#{$name} {
+    width: $width;
+    height: $height;
+    margin: 15px;
+    border: none;
+    background-color: $background-color;
+    color: $light;
+    font-size: $font-size;
+    font-weight: 900;
+    border-radius: 5px;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}

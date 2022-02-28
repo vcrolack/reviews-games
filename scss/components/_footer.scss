@@ -1,7 +1,13 @@
 #footer {
   margin-top: 30px;
-  background-color: #F9F9F9;
+  background-color: map-get($main-palette, background-primary);
 }
+
+%contain-sn-logo {
+  height: 100%;
+  width: 100%;
+}
+
 .container-logo-footer {
   width: 400px;
   height: 300px;
@@ -35,16 +41,13 @@
 
 .instagram {
   background-image: url('../assets/icons/instagram.svg');
-  width: 100%;
-  height: 100%;
+  @extend %contain-sn-logo
 }
 .youtube {
   background-image: url('../assets/icons/youtube.svg');
-  width: 100%;
-  height: 100%;
+  @extend %contain-sn-logo
 }
 .twitter {
   background-image: url('../assets/icons/twitter.svg');
-  width: 100%;
-  height: 100%;
+  @extend %contain-sn-logo
 }

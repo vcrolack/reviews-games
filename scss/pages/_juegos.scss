@@ -1,13 +1,8 @@
-@import "variables";
-@import "fonts";
-@import "header";
-@import "banner";
-
 #section-games {
   margin: 50px;
 }
 
-.card {
+.card-reviews-games {
   width: 15rem;
   height: 300px;
 
@@ -16,20 +11,7 @@
     height: 100%;
     object-fit: cover;
   }
-  .btn-watch-now {
-    width: 70%;
-    height: 40%;
-    margin-top: 20px;
-    border: none;
-    background-color: #181818;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 900;
-    border-radius: 5px;
-    &:hover {
-      background-color: #FF63C2;
-    }
-  }
+  @include create-button($dark, 'watch-now', 70%, 40%, 1.5rem);
 }
 
 @keyframes fadeInUp {
@@ -70,6 +52,3 @@
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-
-@import "footer";
-

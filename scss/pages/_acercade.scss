@@ -1,15 +1,10 @@
-@import "variables";
-@import "fonts";
-@import "header";
-@import "banner";
-
 .title-members {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.card {
+.card-member {
   width: 100%;
   
   img {
@@ -20,8 +15,6 @@
     }
   }
 }
-
-@import "footer";
 
 @media screen and (max-width: 380px ) {
   .logo-about {
