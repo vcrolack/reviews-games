@@ -1,7 +1,7 @@
 {
   "name": "reviews-games",
   "version": "1.0.0",
-  "description": "A web site about videogames",
+  "description": "Un sitio web construido para la crítica y reseña a videojuegos, desde un punto de vista de desarrollador como de aficionado al hobbie.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
