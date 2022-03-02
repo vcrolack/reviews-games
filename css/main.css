@@ -95,6 +95,8 @@
   .container-social-networks .container-sn {
     width: 70px;
     height: 70px; }
+    .container-social-networks .container-sn:hover {
+      cursor: pointer; }
 
 .instagram {
   background-image: url("../assets/icons/instagram.svg"); }

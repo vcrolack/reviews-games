@@ -36,18 +36,23 @@
   .container-sn {
     width: 70px;
     height: 70px;
-  }
+    &:hover {
+      cursor: pointer;
+    }
+  } 
 }
 
 .instagram {
   background-image: url('../assets/icons/instagram.svg');
-  @extend %contain-sn-logo
+  @extend %contain-sn-logo;
+
 }
 .youtube {
   background-image: url('../assets/icons/youtube.svg');
-  @extend %contain-sn-logo
+  @extend %contain-sn-logo;
 }
+
 .twitter {
   background-image: url('../assets/icons/twitter.svg');
-  @extend %contain-sn-logo
+  @extend %contain-sn-logo;
 }
