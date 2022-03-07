@@ -1,5 +1,7 @@
 # reviews-games
-Repositorio del desarrollo del proyecto del curso de Desarrollo Web impartido por Coder House
+Repositorio del desarrollo del proyecto del curso de Desarrollo Web impartido por Coder House.
+
+Es una página de reseña de videojuegos pasados y actuales. Está construida con HTML, CSS, Bootstrap 5.1.3 y SCSS.
 
 LINK PARA WIREFRAME:
 https://xd.adobe.com/view/c4196615-d119-43e3-ad25-d2ef9e01843d-914a/
@@ -9,6 +11,3 @@ https://github.com/vcrolack/reviews-games
 
 LINK GITHUB PAGES:
 https://vcrolack.github.io/reviews-games/
-
-3era ENTREGA:
-  Se sacaron las páginas de la carpeta pages para que la url sea amigable, como se vio en una clase.
