@@ -26,3 +26,11 @@
     height: 100%;
   }
 }
+
+@media screen and (max-width: 270px) {
+  .logo-about {
+    width: 200px;
+    height: 150px;
+    min-width: 200px;
+  }
+}
