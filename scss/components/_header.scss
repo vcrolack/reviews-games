@@ -2,14 +2,6 @@
   min-height: 100px;
 }
 
-.navbar-collapse {
-  background-color: map-get($main-palette, background-secondary );
-  margin-top: 5px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
 .container-logo {
   width: 100px;
   min-width: 100px;
@@ -41,6 +33,16 @@
   &:hover {
     background-color: map-get($main-palette, "color-secondary");
     border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    background-color: map-get($main-palette, background-secondary );
+    margin-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
 
